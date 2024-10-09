@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>What is my address?</title>
+
+    <link rel="stylesheet" type="text/css" href="https://static.whatismyaddress.net/static/css/_packed-address.css?40f52b48" media="screen">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://static.whatismyaddress.net/static/address/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://static.whatismyaddress.net/static/address/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://static.whatismyaddress.net/static/address/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="https://static.whatismyaddress.net/static/address/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://static.whatismyaddress.net/static/address/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <meta name="description" content="See the address of your current location based on your GPS position. Works worldwide and you can drag the map to adjust the location.">
+    <meta name="keywords" content="what is my address, what is my location,address, location, automatic, gps, where am i">
+
+    <meta property="og:title" content="What is my address?">
+    <meta property="og:description" content="See the address of your current location based on your GPS position. Works worldwide and you can drag the map to adjust the location.">
+    <meta property="og:image" content="https://static.whatismyaddress.net/static/address/og-screenshot.png">
+    <meta property="og:url" content="http://whatismyaddress.net/">
+    <meta property="og:type" content="website">
+    <meta property="fb:admins" content="568968693">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2741106300689510" crossorigin="anonymous"></script>
+</head>
+
+<body class="" data-address-site="1">
+    <h1 id="logo"><a href="/">What is my address?</a></h1>
+
+    <div class="wrapper">
+        <div id="main" class="container clearfix">
+
+            <div class="address-content clearfix">
+                <div class="zip-info">
+                    <h2><span id="zip-header" data-zip-label="postal code">Your current address is</span></h2>
+                    <span id="address">
+        <i class="placeholder placeholder-large"></i><br>
+        <i class="placeholder"></i><br>
+        <i class="placeholder placeholder-small"></i>
+      </span>
+                    <p id="based-on"></p>
+                </div>
+                <div class="fail-message"></div>
+                <div class="map-container-sizer">
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <i class="loader"></i>
+                        <i class="fail"></i>
+                    </div>
+                    <div class="zoom-controls">
+                        <button class="zoom-in">+</button><button class="zoom-out">-</button>
+                    </div>
+                </div>
+                <p class="tip"><strong>Tip:</strong> Drag the map to adjust the location</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="about clearfix">
+                <img src="https://static.whatismyaddress.net/static/address/jonatan.jpg">
+                <div class="text">
+                    <p>Hi, my name is <a href="http://heyman.info">Jonatan</a>!
+                        <p>
+                            <p>
+                                Sometimes I find myself in need of knowing the address of my physical location. Therefore I made this website for finding out your current address based on your GPS position.
+                            </p>
+                            <p>
+                                The website will ask for permission to know your position, which it'll use to determine your address You can also fine-tune the position by panning the map.
+                            </p>
+                            <p class="tech">
+                                This website was built using <a href="https://flask.palletsprojects.com/">Flask</a> and
+                                <a href="https://leafletjs.com/">Leaflet</a>. In the process of building this website, I created two Leaflet plugins that I've open sourced:
+                                <a href="https://github.com/heyman/leaflet-usermarker">Leaflet UserMarker</a> and
+                                <a href="https://github.com/heyman/leaflet-centermarker">Leaflet CenterMarker</a>.
+                            </p>
+
+                            <div class="share">
+                                <div class="buttons-container">
+                                    <div class="btn-like">
+                                        <div class="fb-like" data-href="https://whatismyaddress.net" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+                                    </div>
+                                    <div class="btn-tweet">
+                                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="whatismyaddress.net" data-text="What is my address? Find out through your GPS position:">Tweet</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="fb-root"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="https://static.whatismyaddress.net/static/_packed-address.js?21bffc04"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            WhatAddress.init();
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=462257470498319";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180776010-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-180776010-1');
+    </script>
+</body>
+
+</html>
